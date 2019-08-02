@@ -1,0 +1,2 @@
+# Data-Engineering
+With a goal to turn data into information and information into insights, I discovered that individual decision making and helping 20+ customers to perform business intelligence and strategic business decisions my love for data inflated. A strong passion for data engineering bloomed with love for qualitative data and removal of noise. Spark, Hadoop, Solr and Web Crawling using Python and Java are my skills for Data Engineering.
