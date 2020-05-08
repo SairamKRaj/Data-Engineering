@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeyWord Based search</title>
+</head>
+<body>
+<div class="pageTitle" style="text-align: center">
+    <h1>Keyword-Driven Exploration of Relational Data Using Firebase</h1>
+</div>
+<br/>
+<form onsubmit="searchKeyWord(); return false;">
+    <div class="selectDB" style="margin-left: 30%">
+        <label for="datasets">Choose a dataset:</label>
+
+        <select id="datasets" style="margin-left: 5%">
+            <option value="world">World</option>
+            <option value="bayArea">SF Bay Area Bike Share</option>
+            <option value="stack">Questions from Cross Validated Stack Exchange</option>
+            <option value="audi">Novel Corona</option>
+        </select>
+        <br/><br/>
+
+
+        <label>Enter Search key word: &nbsp;</label>
+        <input type="text" id="search" name="search" size="46">
+        <br/><br/>
+        <br/>
+        <input type="submit" value="Search" style="margin-left: 20%">
+        <input type="reset" value="Clear" style="margin-left: 2%" onclick="clearForm">
+    </div>
+    <br/><br/>
+    <div id="searchDiv" style="display: none;text-align: center">
+
+    </div>
+</form>
+<script>
+    function searchKeyWord() {
+        var x = document.getElementById("search").value;
+        // alert(x);
+        document.getElementById("searchDiv").style.display="block"
+        document.getElementById("searchDiv").innerHTML = "Your search key word is: "+x;
+    }
+    function clearForm(){
+        document.getElementById("search").value="";
+        document.getElementById("searchDiv").style.display="none"
+        // document.getElementById("searchResult").style.display="none"
+    }
+
+</script>
+</body>
+</html>
